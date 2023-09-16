@@ -1,12 +1,12 @@
-import { hamburgerSvg } from "@/utils/UtilsSVG";
+import { bellSvg, hamburgerSvg } from "@/utils/UtilsSVG";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="flex justify-between bg-[#fff]">
       <div>{hamburgerSvg}</div>
-      <span>App Name</span>
-      <span>App Name</span>
+      <h1>App Name</h1>
+      <div>{bellSvg}</div>
     </div>
   );
 };
