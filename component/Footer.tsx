@@ -27,7 +27,9 @@ function Footer() {
     {
       id: 3,
       title: "Create",
-      herf: `${router.pathname === "/class" ? "/new-post" : "/create-class"}`,
+      herf: `${
+        router.pathname === "/class" ? "/create-class" : "/create-class"
+      }`,
       svgImg: createSvg,
     },
     {
@@ -39,7 +41,7 @@ function Footer() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white lg:hidden">
       <div className="max-w-[800px] w-full py-[18px] px-[40px] flex justify-between mx-auto">
         {footerList.map((item) => {
           return (

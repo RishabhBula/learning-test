@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="flex bg-white md:py-5 justify-between items-center">
         <div className="lg:hidden">{hamburgerSvg}</div>
         <h1 className="text-xl font-medium leading-7">App Name</h1>
-        <div className="max-md:hidden md:flex justify-between items-center w-2/12 ">
+        <div className="max-lg:hidden lg:flex justify-between items-center w-2/12 ">
           <Link className="text-[#FF3059] font-medium" href="/create-class">
             Create class
           </Link>
