@@ -7,8 +7,10 @@ import gridImg3 from "../images/group-img-3.png";
 import gridImg4 from "../images/group-img-4.png";
 import gridImg5 from "../images/group-img-5.png";
 import messageIcon from "../images/message-icon.png";
+import { useRouter } from "next/router";
 
 const ClassesCard = () => {
+  const router = useRouter();
   return (
     <div className="rounded-[17px] bg-[#fff] p-[25px] ">
       <h2 className="font-medium text-xl pb-[11px]">English Class</h2>
@@ -16,6 +18,23 @@ const ClassesCard = () => {
         <span>{clockSvg}</span>
         <p className="text-[#8A8586] text-xs mb-[18px]">12 sep 2022</p>
       </div>
+      {(router.pathname === "/create-class" ||
+        router.pathname === "/join-class") && (
+        <div className="mb-3">
+          <button
+            type="button"
+            className="mx-3 rounded-full bg-[#3b71ca]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#3b71ca]"
+          >
+            Design
+          </button>
+          <button
+            type="button"
+            className="mx-3 rounded-full bg-[#d42a46]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#d42a46]"
+          >
+            Research
+          </button>
+        </div>
+      )}
       <div className="flex justify-between">
         <div className="flex">
           <Image className="object-contain" src={gridImg1} alt="" />

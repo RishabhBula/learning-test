@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/component/Navbar";
 import ClassesCard from "@/component/ClassesCard";
 import Footer from "@/component/Footer";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,10 +13,18 @@ export default function Home() {
       <Navbar />
       <div className="w-full max-w-[800px] mx-auto h-[calc(100vh-140px)] overflow-y-auto">
         <div className="my-5 px-[25px] flex gap-[15px] flex-col">
-          <ClassesCard />
-          <ClassesCard />
-          <ClassesCard />
-          <ClassesCard />
+          <Link href={"/class"}>
+            <ClassesCard />
+          </Link>
+          <Link href={"/class"}>
+            <ClassesCard />
+          </Link>
+          <Link href={"/class"}>
+            <ClassesCard />
+          </Link>
+          <Link href={"/class"}>
+            <ClassesCard />
+          </Link>
         </div>
       </div>
       <Footer />

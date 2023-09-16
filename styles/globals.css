@@ -23,3 +23,15 @@ body {
   padding-right: 20px;
   width: 100%;
 }
+
+.animation {
+  transition: all .4s ease-in;
+}
+
+.active-item svg path {
+  fill: #FF5174;
+}
+
+.active-item p {
+  color: #FF5174;
+}
