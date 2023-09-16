@@ -1,10 +1,14 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Navbar from "@/component/Navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div className="bg-white">
+      <Navbar />
+      <div>sss</div>
+    </div>
+  );
 }

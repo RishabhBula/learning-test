@@ -17,11 +17,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
 }
