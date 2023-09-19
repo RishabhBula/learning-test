@@ -16,7 +16,7 @@ const Modal = (props: ModalInterface) => {
       }`}
     >
       <div
-        className={`bg-white rounded-[20px] max-w-[480px] w-full mx-auto px-5 pt-[30px] pb-[50px] animate ease-linear md:!mb-0 ${
+        className={`bg-white rounded-[20px] max-sm:max-w-[640px] sm:max-w-[480px] w-full mx-auto px-5 pt-[30px] pb-[50px] animate ease-linear md:!mb-0 ${
           props.create ? "-mb-[15px]" : "mb-[-640px] "
         }`}
       >
