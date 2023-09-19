@@ -1,21 +1,27 @@
 import React, { MouseEventHandler } from "react";
-import Button from "./Button";
-import Input from "./Input";
+import Input from './Input'
+import Button from './Button'
 
-interface JoinClassModalBodyProps {
-  handleSave: MouseEventHandler<HTMLButtonElement>;
-}
-const JoinClassModalBody = (props: JoinClassModalBodyProps) => {
+interface LoginInModalBodyProp {
+    handleSave: MouseEventHandler<HTMLButtonElement>;
+  }
+
+const LoginInModalBody = (props: LoginInModalBodyProp) => {
   return (
     <>
-      <h1 className="text-xl font-medium leading-8 mt-5">Join Class</h1>
+    <h1 className="text-xl font-medium leading-8 mt-5">Login In</h1>
       <p className="text-sm font-normal text-[#B7B7B7] pb-[23px]">
-        If you want to start quiz please enter a quiz id
+        Login to join the class
       </p>
       <div className="flex flex-col gap-[27px]">
         <Input
           InputType="text"
-          Placeholder="please enter class id"
+          Placeholder="Id"
+          ClassName="border border-[grey]/[50%] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
+        />
+        <Input
+          InputType="password"
+          Placeholder="Password"
           ClassName="border border-[grey]/[50%] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
         />
         <Button
@@ -25,7 +31,7 @@ const JoinClassModalBody = (props: JoinClassModalBodyProps) => {
         />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default JoinClassModalBody;
+export default LoginInModalBody

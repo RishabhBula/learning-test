@@ -16,12 +16,12 @@ const CreateClassModalBody = (props: any) => {
         <Input
           InputType="text"
           Placeholder="choose collection"
-          ClassName="border border-[#F1F1F1] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
+          ClassName="border border-[grey]/[50%] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
         />
         <Input
           InputType="text"
           Placeholder="please enter class title"
-          ClassName="border border-[#F1F1F1] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
+          ClassName="border border-[grey]/[50%] p-4 rounded-[15px] w-full text-sm font-normal text-[#B7B7B7]"
         />
         <Button
           ClassName="bg-[#FF5174] border-2 border-[#FF5174] text-white w-36 px-3 py-[15px] rounded-2xl text-[18px] w-full"

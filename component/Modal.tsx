@@ -16,8 +16,8 @@ const Modal = (props: ModalInterface) => {
       }`}
     >
       <div
-        className={`bg-white rounded-[20px] w-[640px] mx-auto px-5 pt-[30px] pb-[50px] ease-linear max-sm:${
-          props.create ? "-mb-[15px]" : "-mb-[640px] "
+        className={`bg-white rounded-[20px] w-[640px] mx-auto px-5 pt-[30px] pb-[50px] ease-linear md:!mb-0 ${
+          props.create ? "-mb-[15px]" : "mb-[-640px] "
         }`}
       >
         <div className="mx-auto w-max">
