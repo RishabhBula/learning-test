@@ -15,7 +15,7 @@ const JoinClass = () => {
     setCreate("");
   };
   return (
-    <div className="bg-[#F8F9FD] h-screen text-black md:bg-[#FF3059] md:flex md:justify-between md:flex-col">
+    <div className="bg-[#f7d4da] h-screen text-black md:bg-[#FF3059] md:flex md:justify-between md:flex-col">
       <Navbar />
       <div className="flex justify-center gap-[100px] items-center mt-5 mb-2">
         <Button

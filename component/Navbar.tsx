@@ -5,20 +5,22 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="flex bg-white md:py-5 justify-between items-center px-[5px]">
+      <div className="flex bg-white md:py-5 justify-between items-center px-[25px] py-3">
         <div className="lg:hidden">{hamburgerSvg}</div>
         <Link href={"/"}>
           <h1 className="text-xl font-medium leading-7">App Name</h1>
         </Link>
-        <div className="max-lg:hidden lg:flex justify-between items-center w-2/12 ">
-          <Link className="text-[#FF3059] font-medium" href="/create-class">
+        <div className="flex gap-4">
+        <div className="max-lg:hidden lg:flex justify-between items-center gap-4">
+          <Link className="text-[#000] font-normal hover:opacity-50 animation text-sm text-[grey]" href="/create-class">
             Create class
           </Link>
-          <Link className="text-[#FF3059] font-medium" href="/join-class">
+          <Link className="text-[#000] font-normal hover:opacity-50 animation text-sm text-[grey]" href="/join-class">
             Join class
           </Link>
         </div>
         <div>{bellSvg}</div>
+        </div>
       </div>
     </>
   );

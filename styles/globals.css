@@ -25,7 +25,7 @@ body {
 }
 
 .animation {
-  transition: all .4s ease-in;
+  transition: all .2s ease-in;
 }
 
 .active-item svg path {
@@ -37,10 +37,13 @@ body {
 }
 
 .active-item svg path,
-.post-tile:hover svg path {
+.post-tile:hover svg path
+{
   fill: #FF5174;
 }
-
+.hover-red:hover svg path{
+  stroke: #FF5174;
+}
 .active-item p {
   color: #FF5174;
 }
@@ -53,6 +56,6 @@ body {
   color: white
 }
 
-.post-tile:hover svg circle {
+.post-tile:hover svg circle{
   fill: white;
 }
