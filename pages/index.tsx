@@ -14,13 +14,13 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [loginBtn, setLoginBtn] = useState<boolean>(true)
   const [loginModal, setLoginModal] = useState("");
-  const [showModal , setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const handleSave = () => {
     setLoginModal(""),
-    setShowModal(!showModal)
+      setShowModal(!showModal)
   };
   return (
-    <div className="bg-[#ffe6eb] h-screen text-black md:bg-[#ffe6eb] md:flex md:justify-between md:flex-col">
+    <div className="bg-[#ffe6eb] h-screen text-black md:flex md:justify-between md:flex-col">
       <Navbar />
 
       <div className="w-full mx-auto max-md:h-[calc(100vh-164px)] md:h-[calc(100vh-68px)]  overflow-y-auto">
@@ -61,7 +61,10 @@ export default function Home() {
 
 
       </div>
-      <Footer />
+      {
+        loginBtn === false &&
+        <Footer />
+      }
     </div>
   );
 }

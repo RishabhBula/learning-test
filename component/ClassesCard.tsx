@@ -13,7 +13,7 @@ const ClassesCard = () => {
   const router = useRouter();
   return (
     <div className="rounded-[17px] bg-[#fff] p-[25px] ">
-      <h2 className="font-medium text-xl pb-[11px]">English Class</h2>
+      <h2 className="font-medium text-lg pb-[11px]">English Class</h2>
       <div className="flex gap-[9px]">
         <span>{clockSvg}</span>
         <p className="text-[#8A8586] text-xs mb-[18px]">12 sep 2022</p>
@@ -23,13 +23,13 @@ const ClassesCard = () => {
         <div className="mb-3">
           <button
             type="button"
-            className="mx-3 rounded-full bg-[#3b71ca]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#3b71ca]"
+            className="mr-3 rounded-full bg-[#3b71ca]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#3b71ca]"
           >
             Design
           </button>
           <button
             type="button"
-            className="mx-3 rounded-full bg-[#d42a46]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#d42a46]"
+            className="rounded-full bg-[#d42a46]/[0.3] font-semibold px-6 pb-2 pt-2.5 text-xs text-[#d42a46]"
           >
             Research
           </button>

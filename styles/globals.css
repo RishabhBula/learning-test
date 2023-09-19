@@ -23,6 +23,9 @@ body {
   padding-right: 20px; */
   width: 100%;
 }
+.animate{
+  transition: all .6s ease-in;
+}
 
 .animation {
   transition: all .2s ease-in;

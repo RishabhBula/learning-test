@@ -15,8 +15,9 @@ const CreateClass = () => {
     setCreate("");
   };
   return (
-    <div className="bg-[#f7d4da] h-screen text-black md:bg-[#ffccd6] md:flex md:justify-between md:flex-col">
+    <div className="bg-[#ffe6eb] h-screen text-black md:flex md:justify-between md:flex-col">
       <Navbar />
+      <div className="w-full max-md:h-[calc(100vh-160px)] md:h-[calc(100vh-68px)] overflow-y-auto">
       <div className="flex justify-between md:justify-center gap-[100px] items-center mt-5 mb-2 mx-[25px]">
         <Button
           ClassName="bg-[#fff] border-2 border-black w-36 px-5 py-2  rounded-2xl hover:text-white hover:bg-black animation" 
@@ -30,7 +31,6 @@ const CreateClass = () => {
           OnClick={() => setCreate("Create")}
         />
       </div>
-      <div className="w-full h-[calc(100vh-140px)] overflow-y-auto">
         <div className="my-5 px-[25px] flex gap-[15px] flex-col">
           <Link href={"/class"}>
             <ClassesCard />

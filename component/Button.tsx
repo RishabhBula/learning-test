@@ -18,7 +18,7 @@ const Button = ({ ClassName, ButtonText, SVGType, OnClick }: ButtonProps) => {
           {SVGType === "Plus" ? plusSvg : SVGType === "Filter" ? filterSvg : ""}
         </span>
       )}
-      <span className="text-xl font-medium leading-7">{ButtonText}</span>
+      <span className="text-base font-medium leading-7">{ButtonText}</span>
     </button>
   );
 };

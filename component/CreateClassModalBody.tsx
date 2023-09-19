@@ -8,8 +8,8 @@ interface CreateClassModalBodyProps {
 const CreateClassModalBody = (props: any) => {
   return (
     <>
-      <h1 className="text-xl font-medium leading-8 mt-5">Create Class</h1>
-      <p className="text-sm font-normal text-[#B7B7B7] pb-[23px]">
+      <h1 className="text-lg font-medium leading-8 mt-5 text-center">Create Class</h1>
+      <p className="text-sm font-normal text-[#B7B7B7] pb-[23px] text-center">
         If you want to create Quiz please enter Quiz Title
       </p>
       <div className="flex flex-col gap-[27px]">

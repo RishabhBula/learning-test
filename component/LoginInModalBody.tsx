@@ -9,8 +9,8 @@ interface LoginInModalBodyProp {
 const LoginInModalBody = (props: LoginInModalBodyProp) => {
   return (
     <>
-    <h1 className="text-xl font-medium leading-8 mt-5">Login In</h1>
-      <p className="text-sm font-normal text-[#B7B7B7] pb-[23px]">
+    <h1 className="text-lg font-medium leading-8 mt-5 text-center">Login In</h1>
+      <p className="text-sm font-normal text-[#B7B7B7] pb-[23px] text-center">
         Login to join the class
       </p>
       <div className="flex flex-col gap-[27px]">

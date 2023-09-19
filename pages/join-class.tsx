@@ -15,7 +15,7 @@ const JoinClass = () => {
     setCreate("");
   };
   return (
-    <div className="bg-[#f7d4da] h-screen text-black md:bg-[#FF3059] md:flex md:justify-between md:flex-col">
+    <div className="bg-[#ffe6eb] h-screen text-black md:flex md:justify-between md:flex-col">
       <Navbar />
       <div className="flex justify-center gap-[100px] items-center mt-5 mb-2">
         <Button
@@ -30,7 +30,7 @@ const JoinClass = () => {
           OnClick={() => setCreate("Create")}
         />
       </div>
-      <div className="w-full max-w-[800px] mx-auto h-[calc(100vh-140px)] overflow-y-auto">
+      <div className="w-full max-md:h-[calc(100vh-235px)] md:h-[calc(100vh-68px)] overflow-y-auto">
         <div className="my-5 px-[25px] flex gap-[15px] flex-col">
           <Link href={"/class"}>
             <ClassesCard />

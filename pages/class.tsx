@@ -72,7 +72,7 @@ const Class = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-[#f8f9fd] px-5 pt-5">
+      <div className="bg-[#ffe6eb] px-5 pt-5 mb-[30px]">
         <div className="flex justify-start gap-2 items-center mt-5">
           <Button
             ClassName="bg-[#FF5174] border-2 border-[#FF5174] text-white w-36 px-3 py-1 rounded-2xl"
@@ -98,8 +98,8 @@ const Class = () => {
       <Modal create={create} ImgType={create}>
         {create === "Create" && (
           <>
-            <h1 className="text-xl font-medium leading-8 mt-5">New Post</h1>
-            <p className="text-sm font-normal text-[#B7B7B7] pb-[23px]">
+            <h1 className="text-lg font-medium leading-8 mt-5 text-center">New Post</h1>
+            <p className="text-sm font-normal text-[#B7B7B7] pb-[23px] text-center">
               Please select your post type and share your post
             </p>
             <div className="grid grid-cols-3 gap-[27px]">
@@ -107,7 +107,7 @@ const Class = () => {
                 return (
                   <div
                     key={item.id}
-                    className="border-2 border-[#FF5174] rounded-[15px] py-[18px] flex justify-center items-center flex-col first:bg-[#ff5174] cursor-pointer post-tile"
+                    className="border-2 border-[#FF5174] rounded-[15px] py-[18px] flex justify-center items-center flex-col first:text-white first:bg-[#ff5174] cursor-pointer post-tile"
                   >
                     <span className="">{item.image}</span>
                     <h6 className="first:text-white mt-[5px] text-[14px]">
